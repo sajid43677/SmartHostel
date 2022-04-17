@@ -29,6 +29,11 @@ namespace SmartHostel
             string newId = "";
             var sql = "select * from ResidentInfo order by Id desc;";
             DataTable dt = this.Da.ExecuteQueryTable(sql);
+            if(dt.Rows.Count == 0)
+            {
+                newId = "R-" + (1).ToString("d4") + "-22";
+                return newId;
+            }
 
             string lastId = dt.Rows[0][0].ToString();
             string[] temp = lastId.Split('-');
