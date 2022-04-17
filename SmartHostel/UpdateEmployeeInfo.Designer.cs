@@ -32,13 +32,13 @@
             this.pnlUpdateEmp = new System.Windows.Forms.Panel();
             this.btnEmpIdSearch = new System.Windows.Forms.Button();
             this.lblEmpNIDAdd = new System.Windows.Forms.Label();
-            this.btnEmpClear = new System.Windows.Forms.Button();
+            this.btnEmpUpdateClear = new System.Windows.Forms.Button();
             this.lblEmpPhoneAdd = new System.Windows.Forms.Label();
             this.btnEmpUpdate = new System.Windows.Forms.Button();
-            this.txtEmpNIDAdd = new System.Windows.Forms.TextBox();
-            this.txtEmpPhoneAdd = new System.Windows.Forms.TextBox();
+            this.txtEmpNIDUpdate = new System.Windows.Forms.TextBox();
+            this.txtEmpPhoneUpdate = new System.Windows.Forms.TextBox();
             this.lblEmpNameAdd = new System.Windows.Forms.Label();
-            this.txtEmpNameAdd = new System.Windows.Forms.TextBox();
+            this.txtEmpNameUpdate = new System.Windows.Forms.TextBox();
             this.pnlUpdateEmp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,18 +48,17 @@
             this.pnlUpdateEmp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlUpdateEmp.BackgroundImage")));
             this.pnlUpdateEmp.Controls.Add(this.btnEmpIdSearch);
             this.pnlUpdateEmp.Controls.Add(this.lblEmpNIDAdd);
-            this.pnlUpdateEmp.Controls.Add(this.btnEmpClear);
+            this.pnlUpdateEmp.Controls.Add(this.btnEmpUpdateClear);
             this.pnlUpdateEmp.Controls.Add(this.lblEmpPhoneAdd);
             this.pnlUpdateEmp.Controls.Add(this.btnEmpUpdate);
-            this.pnlUpdateEmp.Controls.Add(this.txtEmpNIDAdd);
-            this.pnlUpdateEmp.Controls.Add(this.txtEmpPhoneAdd);
+            this.pnlUpdateEmp.Controls.Add(this.txtEmpNIDUpdate);
+            this.pnlUpdateEmp.Controls.Add(this.txtEmpPhoneUpdate);
             this.pnlUpdateEmp.Controls.Add(this.lblEmpNameAdd);
-            this.pnlUpdateEmp.Controls.Add(this.txtEmpNameAdd);
+            this.pnlUpdateEmp.Controls.Add(this.txtEmpNameUpdate);
             this.pnlUpdateEmp.Location = new System.Drawing.Point(0, 2);
             this.pnlUpdateEmp.Name = "pnlUpdateEmp";
             this.pnlUpdateEmp.Size = new System.Drawing.Size(798, 446);
             this.pnlUpdateEmp.TabIndex = 10;
-            this.pnlUpdateEmp.Visible = false;
             // 
             // btnEmpIdSearch
             // 
@@ -71,6 +70,7 @@
             this.btnEmpIdSearch.TabIndex = 16;
             this.btnEmpIdSearch.Text = "Search";
             this.btnEmpIdSearch.UseVisualStyleBackColor = false;
+            this.btnEmpIdSearch.Click += new System.EventHandler(this.btnEmpIdSearch_Click);
             // 
             // lblEmpNIDAdd
             // 
@@ -84,16 +84,17 @@
             this.lblEmpNIDAdd.TabIndex = 5;
             this.lblEmpNIDAdd.Text = "NID";
             // 
-            // btnEmpClear
+            // btnEmpUpdateClear
             // 
-            this.btnEmpClear.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnEmpClear.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpClear.Location = new System.Drawing.Point(661, 369);
-            this.btnEmpClear.Name = "btnEmpClear";
-            this.btnEmpClear.Size = new System.Drawing.Size(75, 32);
-            this.btnEmpClear.TabIndex = 13;
-            this.btnEmpClear.Text = "Clear";
-            this.btnEmpClear.UseVisualStyleBackColor = false;
+            this.btnEmpUpdateClear.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEmpUpdateClear.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpUpdateClear.Location = new System.Drawing.Point(661, 369);
+            this.btnEmpUpdateClear.Name = "btnEmpUpdateClear";
+            this.btnEmpUpdateClear.Size = new System.Drawing.Size(75, 32);
+            this.btnEmpUpdateClear.TabIndex = 13;
+            this.btnEmpUpdateClear.Text = "Clear";
+            this.btnEmpUpdateClear.UseVisualStyleBackColor = false;
+            this.btnEmpUpdateClear.Click += new System.EventHandler(this.btnEmpUpdateClear_Click);
             // 
             // lblEmpPhoneAdd
             // 
@@ -117,24 +118,27 @@
             this.btnEmpUpdate.TabIndex = 12;
             this.btnEmpUpdate.Text = "Update";
             this.btnEmpUpdate.UseVisualStyleBackColor = false;
+            this.btnEmpUpdate.Visible = false;
+            this.btnEmpUpdate.Click += new System.EventHandler(this.btnEmpUpdate_Click);
             // 
-            // txtEmpNIDAdd
+            // txtEmpNIDUpdate
             // 
-            this.txtEmpNIDAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpNIDAdd.Location = new System.Drawing.Point(257, 25);
-            this.txtEmpNIDAdd.Multiline = true;
-            this.txtEmpNIDAdd.Name = "txtEmpNIDAdd";
-            this.txtEmpNIDAdd.Size = new System.Drawing.Size(259, 36);
-            this.txtEmpNIDAdd.TabIndex = 11;
+            this.txtEmpNIDUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtEmpNIDUpdate.Location = new System.Drawing.Point(257, 25);
+            this.txtEmpNIDUpdate.Multiline = true;
+            this.txtEmpNIDUpdate.Name = "txtEmpNIDUpdate";
+            this.txtEmpNIDUpdate.Size = new System.Drawing.Size(259, 36);
+            this.txtEmpNIDUpdate.TabIndex = 11;
             // 
-            // txtEmpPhoneAdd
+            // txtEmpPhoneUpdate
             // 
-            this.txtEmpPhoneAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpPhoneAdd.Location = new System.Drawing.Point(257, 229);
-            this.txtEmpPhoneAdd.Multiline = true;
-            this.txtEmpPhoneAdd.Name = "txtEmpPhoneAdd";
-            this.txtEmpPhoneAdd.Size = new System.Drawing.Size(259, 36);
-            this.txtEmpPhoneAdd.TabIndex = 10;
+            this.txtEmpPhoneUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtEmpPhoneUpdate.Location = new System.Drawing.Point(257, 229);
+            this.txtEmpPhoneUpdate.Multiline = true;
+            this.txtEmpPhoneUpdate.Name = "txtEmpPhoneUpdate";
+            this.txtEmpPhoneUpdate.Size = new System.Drawing.Size(259, 36);
+            this.txtEmpPhoneUpdate.TabIndex = 10;
+            this.txtEmpPhoneUpdate.Visible = false;
             // 
             // lblEmpNameAdd
             // 
@@ -148,14 +152,15 @@
             this.lblEmpNameAdd.TabIndex = 2;
             this.lblEmpNameAdd.Text = "Name";
             // 
-            // txtEmpNameAdd
+            // txtEmpNameUpdate
             // 
-            this.txtEmpNameAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpNameAdd.Location = new System.Drawing.Point(257, 165);
-            this.txtEmpNameAdd.Multiline = true;
-            this.txtEmpNameAdd.Name = "txtEmpNameAdd";
-            this.txtEmpNameAdd.Size = new System.Drawing.Size(259, 36);
-            this.txtEmpNameAdd.TabIndex = 8;
+            this.txtEmpNameUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtEmpNameUpdate.Location = new System.Drawing.Point(257, 165);
+            this.txtEmpNameUpdate.Multiline = true;
+            this.txtEmpNameUpdate.Name = "txtEmpNameUpdate";
+            this.txtEmpNameUpdate.Size = new System.Drawing.Size(259, 36);
+            this.txtEmpNameUpdate.TabIndex = 8;
+            this.txtEmpNameUpdate.Visible = false;
             // 
             // UpdateEmployeeInfo
             // 
@@ -165,6 +170,7 @@
             this.Controls.Add(this.pnlUpdateEmp);
             this.Name = "UpdateEmployeeInfo";
             this.Text = "UpdateEmployeeInfo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateEmployeeInfo_FormClosed);
             this.pnlUpdateEmp.ResumeLayout(false);
             this.pnlUpdateEmp.PerformLayout();
             this.ResumeLayout(false);
@@ -175,13 +181,13 @@
 
         private System.Windows.Forms.Panel pnlUpdateEmp;
         private System.Windows.Forms.Label lblEmpNIDAdd;
-        private System.Windows.Forms.Button btnEmpClear;
+        private System.Windows.Forms.Button btnEmpUpdateClear;
         private System.Windows.Forms.Label lblEmpPhoneAdd;
         private System.Windows.Forms.Button btnEmpUpdate;
-        private System.Windows.Forms.TextBox txtEmpNIDAdd;
-        private System.Windows.Forms.TextBox txtEmpPhoneAdd;
+        private System.Windows.Forms.TextBox txtEmpNIDUpdate;
+        private System.Windows.Forms.TextBox txtEmpPhoneUpdate;
         private System.Windows.Forms.Label lblEmpNameAdd;
-        private System.Windows.Forms.TextBox txtEmpNameAdd;
+        private System.Windows.Forms.TextBox txtEmpNameUpdate;
         private System.Windows.Forms.Button btnEmpIdSearch;
     }
 }

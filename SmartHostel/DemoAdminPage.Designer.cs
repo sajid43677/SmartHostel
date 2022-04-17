@@ -47,7 +47,7 @@
             this.pnlEmpSec = new System.Windows.Forms.Panel();
             this.btnEmpSecBack = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnUpdateEmp = new System.Windows.Forms.Button();
             this.btnAddEmp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -282,7 +282,7 @@
             this.pnlEmpSec.BackgroundImage = global::SmartHostel.Properties.Resources.Hostel_Dormitory;
             this.pnlEmpSec.Controls.Add(this.btnEmpSecBack);
             this.pnlEmpSec.Controls.Add(this.button5);
-            this.pnlEmpSec.Controls.Add(this.button6);
+            this.pnlEmpSec.Controls.Add(this.btnUpdateEmp);
             this.pnlEmpSec.Controls.Add(this.btnAddEmp);
             this.pnlEmpSec.Location = new System.Drawing.Point(336, 97);
             this.pnlEmpSec.Name = "pnlEmpSec";
@@ -318,21 +318,22 @@
             this.button5.Text = "Remove Employee";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnUpdateEmp
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(136, 142);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(230, 54);
-            this.button6.TabIndex = 29;
-            this.button6.Text = "Update Employee";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnUpdateEmp.BackColor = System.Drawing.Color.White;
+            this.btnUpdateEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnUpdateEmp.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
+            this.btnUpdateEmp.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateEmp.Image")));
+            this.btnUpdateEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateEmp.Location = new System.Drawing.Point(136, 142);
+            this.btnUpdateEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateEmp.Name = "btnUpdateEmp";
+            this.btnUpdateEmp.Size = new System.Drawing.Size(230, 54);
+            this.btnUpdateEmp.TabIndex = 29;
+            this.btnUpdateEmp.Text = "Update Employee";
+            this.btnUpdateEmp.UseVisualStyleBackColor = false;
+            this.btnUpdateEmp.Click += new System.EventHandler(this.btnUpdateEmp_Click);
             // 
             // btnAddEmp
             // 
@@ -393,7 +394,7 @@
         private System.Windows.Forms.Button btnAddRes;
         private System.Windows.Forms.Panel pnlEmpSec;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnUpdateEmp;
         private System.Windows.Forms.Button btnAddEmp;
         private System.Windows.Forms.Button btnResSecBack;
         private System.Windows.Forms.Button btnEmpSecBack;
