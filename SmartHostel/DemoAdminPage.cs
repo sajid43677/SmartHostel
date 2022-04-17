@@ -36,5 +36,19 @@ namespace SmartHostel
             this.btnResSec.ForeColor = Color.White;
 
         }
+
+        private void btnEmpSec_Click(object sender, EventArgs e)
+        {
+            this.btnAddEmp.ForeColor = Color.FromArgb(56, 182, 255);
+            this.btnAddEmp.BackColor = Color.White;
+            this.pnlEmpSec.Visible = true;
+        }
+
+        private void btnEmpSecBack_Click(object sender, EventArgs e)
+        {
+            this.pnlEmpSec.Visible = false;
+            this.btnEmpSec.BackColor = Color.FromArgb(56, 182, 255);
+            this.btnEmpSec.ForeColor = Color.White;
+        }
     }
 }
