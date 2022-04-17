@@ -16,7 +16,7 @@ namespace SmartHostel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DemoAdminPage());
+            Application.Run(new Login());
         }
     }
 }

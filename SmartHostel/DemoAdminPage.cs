@@ -17,6 +17,11 @@ namespace SmartHostel
             InitializeComponent();
         }
 
+        public DemoAdminPage(Form login)
+        {
+            InitializeComponent();
+        }
+
         private void btnResSec_Click(object sender, EventArgs e)
         {
             this.btnResSec.ForeColor = Color.FromArgb(56, 182, 255);
@@ -50,6 +55,21 @@ namespace SmartHostel
             this.pnlEmpSec.Visible = false;
             this.btnEmpSec.BackColor = Color.FromArgb(56, 182, 255);
             this.btnEmpSec.ForeColor = Color.White;
+        }
+
+        private void DemoAdminPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DemoAdminPage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

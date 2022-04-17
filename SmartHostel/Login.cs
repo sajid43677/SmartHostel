@@ -12,9 +12,36 @@ namespace SmartHostel
 {
     public partial class Login : Form
     {
+        private DataAccesss Da { get; set; }
         public Login()
         {
             InitializeComponent();
+            this.Da = new DataAccesss();
+        }
+
+        
+
+        private void txtUserId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string sql = "select * from EmployeeInfo where Id = '" + this.txtUserId.Text + "' and Password = '" + this.txtUserPass.Text + "';";
+            var ds = Da.ExecuteQuery(sql);
+            if (ds.Tables[0].Rows.Count == 1)
+            {
+                MessageBox.Show("Wellcome");
+                new DemoAdminPage(this).Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Username or Password is incorrect");
+            }
+            
+
         }
     }
 }

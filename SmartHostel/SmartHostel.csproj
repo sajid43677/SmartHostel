@@ -52,6 +52,7 @@
     <Compile Include="AdminWindow.Designer.cs">
       <DependentUpon>AdminWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccesss.cs" />
     <Compile Include="DemoAdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
