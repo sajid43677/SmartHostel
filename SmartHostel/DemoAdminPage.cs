@@ -22,6 +22,7 @@ namespace SmartHostel
             this.btnResSec.ForeColor = Color.FromArgb(56, 182, 255);
             this.btnResSec.BackColor = Color.White;
             this.pnlResSec.Visible = true;
+            this.pnlEmpSec.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -34,14 +35,14 @@ namespace SmartHostel
             this.pnlResSec.Visible=false;
             this.btnResSec.BackColor = Color.FromArgb(56, 182, 255);
             this.btnResSec.ForeColor = Color.White;
-
         }
 
         private void btnEmpSec_Click(object sender, EventArgs e)
         {
-            this.btnAddEmp.ForeColor = Color.FromArgb(56, 182, 255);
-            this.btnAddEmp.BackColor = Color.White;
+            this.btnEmpSec.ForeColor = Color.FromArgb(56, 182, 255);
+            this.btnEmpSec.BackColor = Color.White;
             this.pnlEmpSec.Visible = true;
+            this.pnlResSec.Visible = false;
         }
 
         private void btnEmpSecBack_Click(object sender, EventArgs e)
