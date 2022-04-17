@@ -83,5 +83,11 @@ namespace SmartHostel
             new UpdateEmployeeInfo(this).Show();
             this.Visible=false;
         }
+
+        private void btnAddRes_Click(object sender, EventArgs e)
+        {
+            new AddResident(this).Show();
+            this.Visible = false;
+        }
     }
 }

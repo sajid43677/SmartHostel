@@ -275,6 +275,7 @@
             this.btnAddRes.TabIndex = 27;
             this.btnAddRes.Text = "Add Resident";
             this.btnAddRes.UseVisualStyleBackColor = false;
+            this.btnAddRes.Click += new System.EventHandler(this.btnAddRes_Click);
             // 
             // pnlEmpSec
             // 
@@ -284,7 +285,7 @@
             this.pnlEmpSec.Controls.Add(this.button5);
             this.pnlEmpSec.Controls.Add(this.btnUpdateEmp);
             this.pnlEmpSec.Controls.Add(this.btnAddEmp);
-            this.pnlEmpSec.Location = new System.Drawing.Point(336, 97);
+            this.pnlEmpSec.Location = new System.Drawing.Point(336, 100);
             this.pnlEmpSec.Name = "pnlEmpSec";
             this.pnlEmpSec.Size = new System.Drawing.Size(500, 341);
             this.pnlEmpSec.TabIndex = 2;

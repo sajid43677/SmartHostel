@@ -217,6 +217,7 @@
             this.btnResidentClear.TabIndex = 19;
             this.btnResidentClear.Text = "Clear";
             this.btnResidentClear.UseVisualStyleBackColor = false;
+            this.btnResidentClear.Click += new System.EventHandler(this.btnResidentClear_Click);
             // 
             // btnResidentSave
             // 
@@ -229,6 +230,7 @@
             this.btnResidentSave.TabIndex = 18;
             this.btnResidentSave.Text = "Save";
             this.btnResidentSave.UseVisualStyleBackColor = false;
+            this.btnResidentSave.Click += new System.EventHandler(this.btnResidentSave_Click);
             // 
             // txtResidentMotherNameAdd
             // 
@@ -266,6 +268,7 @@
             this.Controls.Add(this.pnlResidentAdd);
             this.Name = "AddResident";
             this.Text = "Add Resident";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddResident_FormClosed);
             this.pnlResidentAdd.ResumeLayout(false);
             this.pnlResidentAdd.PerformLayout();
             this.ResumeLayout(false);
