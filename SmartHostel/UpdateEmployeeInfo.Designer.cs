@@ -30,8 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateEmployeeInfo));
             this.pnlUpdateEmp = new System.Windows.Forms.Panel();
-            this.txtSearchEmpId = new System.Windows.Forms.TextBox();
-            this.lblSearchEmpIdUpdate = new System.Windows.Forms.Label();
+            this.btnEmpIdSearch = new System.Windows.Forms.Button();
             this.lblEmpNIDAdd = new System.Windows.Forms.Label();
             this.btnEmpClear = new System.Windows.Forms.Button();
             this.lblEmpPhoneAdd = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.txtEmpPhoneAdd = new System.Windows.Forms.TextBox();
             this.lblEmpNameAdd = new System.Windows.Forms.Label();
             this.txtEmpNameAdd = new System.Windows.Forms.TextBox();
-            this.btnEmpIdSearch = new System.Windows.Forms.Button();
             this.pnlUpdateEmp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,8 +47,6 @@
             this.pnlUpdateEmp.BackColor = System.Drawing.Color.Transparent;
             this.pnlUpdateEmp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlUpdateEmp.BackgroundImage")));
             this.pnlUpdateEmp.Controls.Add(this.btnEmpIdSearch);
-            this.pnlUpdateEmp.Controls.Add(this.txtSearchEmpId);
-            this.pnlUpdateEmp.Controls.Add(this.lblSearchEmpIdUpdate);
             this.pnlUpdateEmp.Controls.Add(this.lblEmpNIDAdd);
             this.pnlUpdateEmp.Controls.Add(this.btnEmpClear);
             this.pnlUpdateEmp.Controls.Add(this.lblEmpPhoneAdd);
@@ -65,26 +61,16 @@
             this.pnlUpdateEmp.TabIndex = 10;
             this.pnlUpdateEmp.Visible = false;
             // 
-            // txtSearchEmpId
+            // btnEmpIdSearch
             // 
-            this.txtSearchEmpId.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtSearchEmpId.Location = new System.Drawing.Point(257, 47);
-            this.txtSearchEmpId.Multiline = true;
-            this.txtSearchEmpId.Name = "txtSearchEmpId";
-            this.txtSearchEmpId.Size = new System.Drawing.Size(259, 36);
-            this.txtSearchEmpId.TabIndex = 15;
-            // 
-            // lblSearchEmpIdUpdate
-            // 
-            this.lblSearchEmpIdUpdate.AutoSize = true;
-            this.lblSearchEmpIdUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblSearchEmpIdUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearchEmpIdUpdate.ForeColor = System.Drawing.Color.Black;
-            this.lblSearchEmpIdUpdate.Location = new System.Drawing.Point(191, 47);
-            this.lblSearchEmpIdUpdate.Name = "lblSearchEmpIdUpdate";
-            this.lblSearchEmpIdUpdate.Size = new System.Drawing.Size(29, 28);
-            this.lblSearchEmpIdUpdate.TabIndex = 14;
-            this.lblSearchEmpIdUpdate.Text = "Id";
+            this.btnEmpIdSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnEmpIdSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpIdSearch.Location = new System.Drawing.Point(344, 100);
+            this.btnEmpIdSearch.Name = "btnEmpIdSearch";
+            this.btnEmpIdSearch.Size = new System.Drawing.Size(75, 32);
+            this.btnEmpIdSearch.TabIndex = 16;
+            this.btnEmpIdSearch.Text = "Search";
+            this.btnEmpIdSearch.UseVisualStyleBackColor = false;
             // 
             // lblEmpNIDAdd
             // 
@@ -92,7 +78,7 @@
             this.lblEmpNIDAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblEmpNIDAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpNIDAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpNIDAdd.Location = new System.Drawing.Point(172, 296);
+            this.lblEmpNIDAdd.Location = new System.Drawing.Point(172, 25);
             this.lblEmpNIDAdd.Name = "lblEmpNIDAdd";
             this.lblEmpNIDAdd.Size = new System.Drawing.Size(48, 28);
             this.lblEmpNIDAdd.TabIndex = 5;
@@ -135,7 +121,7 @@
             // txtEmpNIDAdd
             // 
             this.txtEmpNIDAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpNIDAdd.Location = new System.Drawing.Point(257, 288);
+            this.txtEmpNIDAdd.Location = new System.Drawing.Point(257, 25);
             this.txtEmpNIDAdd.Multiline = true;
             this.txtEmpNIDAdd.Name = "txtEmpNIDAdd";
             this.txtEmpNIDAdd.Size = new System.Drawing.Size(259, 36);
@@ -171,17 +157,6 @@
             this.txtEmpNameAdd.Size = new System.Drawing.Size(259, 36);
             this.txtEmpNameAdd.TabIndex = 8;
             // 
-            // btnEmpIdSearch
-            // 
-            this.btnEmpIdSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnEmpIdSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpIdSearch.Location = new System.Drawing.Point(344, 100);
-            this.btnEmpIdSearch.Name = "btnEmpIdSearch";
-            this.btnEmpIdSearch.Size = new System.Drawing.Size(75, 32);
-            this.btnEmpIdSearch.TabIndex = 16;
-            this.btnEmpIdSearch.Text = "Search";
-            this.btnEmpIdSearch.UseVisualStyleBackColor = false;
-            // 
             // UpdateEmployeeInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -199,8 +174,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlUpdateEmp;
-        private System.Windows.Forms.TextBox txtSearchEmpId;
-        private System.Windows.Forms.Label lblSearchEmpIdUpdate;
         private System.Windows.Forms.Label lblEmpNIDAdd;
         private System.Windows.Forms.Button btnEmpClear;
         private System.Windows.Forms.Label lblEmpPhoneAdd;

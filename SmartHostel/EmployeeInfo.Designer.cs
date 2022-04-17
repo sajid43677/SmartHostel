@@ -34,11 +34,9 @@
             this.btnEmpClear = new System.Windows.Forms.Button();
             this.lblEmpPhoneAdd = new System.Windows.Forms.Label();
             this.btnEmpSave = new System.Windows.Forms.Button();
-            this.lblEmpPasswordAdd = new System.Windows.Forms.Label();
             this.txtEmpNIDAdd = new System.Windows.Forms.TextBox();
             this.txtEmpPhoneAdd = new System.Windows.Forms.TextBox();
             this.lblEmpNameAdd = new System.Windows.Forms.Label();
-            this.txtEmpPasswordAdd = new System.Windows.Forms.TextBox();
             this.txtEmpNameAdd = new System.Windows.Forms.TextBox();
             this.pnl.SuspendLayout();
             this.SuspendLayout();
@@ -51,11 +49,9 @@
             this.pnl.Controls.Add(this.btnEmpClear);
             this.pnl.Controls.Add(this.lblEmpPhoneAdd);
             this.pnl.Controls.Add(this.btnEmpSave);
-            this.pnl.Controls.Add(this.lblEmpPasswordAdd);
             this.pnl.Controls.Add(this.txtEmpNIDAdd);
             this.pnl.Controls.Add(this.txtEmpPhoneAdd);
             this.pnl.Controls.Add(this.lblEmpNameAdd);
-            this.pnl.Controls.Add(this.txtEmpPasswordAdd);
             this.pnl.Controls.Add(this.txtEmpNameAdd);
             this.pnl.Location = new System.Drawing.Point(0, 2);
             this.pnl.Name = "pnl";
@@ -84,6 +80,7 @@
             this.btnEmpClear.TabIndex = 13;
             this.btnEmpClear.Text = "Clear";
             this.btnEmpClear.UseVisualStyleBackColor = false;
+            this.btnEmpClear.Click += new System.EventHandler(this.btnEmpClear_Click);
             // 
             // lblEmpPhoneAdd
             // 
@@ -107,18 +104,7 @@
             this.btnEmpSave.TabIndex = 12;
             this.btnEmpSave.Text = "Save";
             this.btnEmpSave.UseVisualStyleBackColor = false;
-            // 
-            // lblEmpPasswordAdd
-            // 
-            this.lblEmpPasswordAdd.AutoSize = true;
-            this.lblEmpPasswordAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblEmpPasswordAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpPasswordAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpPasswordAdd.Location = new System.Drawing.Point(155, 145);
-            this.lblEmpPasswordAdd.Name = "lblEmpPasswordAdd";
-            this.lblEmpPasswordAdd.Size = new System.Drawing.Size(96, 28);
-            this.lblEmpPasswordAdd.TabIndex = 3;
-            this.lblEmpPasswordAdd.Text = "Password";
+            this.btnEmpSave.Click += new System.EventHandler(this.btnEmpSave_Click);
             // 
             // txtEmpNIDAdd
             // 
@@ -144,29 +130,21 @@
             this.lblEmpNameAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblEmpNameAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpNameAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpNameAdd.Location = new System.Drawing.Point(185, 91);
+            this.lblEmpNameAdd.Location = new System.Drawing.Point(185, 139);
             this.lblEmpNameAdd.Name = "lblEmpNameAdd";
             this.lblEmpNameAdd.Size = new System.Drawing.Size(66, 28);
             this.lblEmpNameAdd.TabIndex = 2;
             this.lblEmpNameAdd.Text = "Name";
             // 
-            // txtEmpPasswordAdd
-            // 
-            this.txtEmpPasswordAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpPasswordAdd.Location = new System.Drawing.Point(288, 137);
-            this.txtEmpPasswordAdd.Multiline = true;
-            this.txtEmpPasswordAdd.Name = "txtEmpPasswordAdd";
-            this.txtEmpPasswordAdd.Size = new System.Drawing.Size(259, 36);
-            this.txtEmpPasswordAdd.TabIndex = 9;
-            // 
             // txtEmpNameAdd
             // 
             this.txtEmpNameAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtEmpNameAdd.Location = new System.Drawing.Point(288, 83);
+            this.txtEmpNameAdd.Location = new System.Drawing.Point(288, 131);
             this.txtEmpNameAdd.Multiline = true;
             this.txtEmpNameAdd.Name = "txtEmpNameAdd";
             this.txtEmpNameAdd.Size = new System.Drawing.Size(259, 36);
             this.txtEmpNameAdd.TabIndex = 8;
+            this.txtEmpNameAdd.TextChanged += new System.EventHandler(this.txtEmpNameAdd_TextChanged);
             // 
             // EmployeeInfo
             // 
@@ -176,6 +154,7 @@
             this.Controls.Add(this.pnl);
             this.Name = "EmployeeInfo";
             this.Text = "EmployeeInfo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeInfo_FormClosed);
             this.pnl.ResumeLayout(false);
             this.pnl.PerformLayout();
             this.ResumeLayout(false);
@@ -189,11 +168,9 @@
         private System.Windows.Forms.Button btnEmpClear;
         private System.Windows.Forms.Label lblEmpPhoneAdd;
         private System.Windows.Forms.Button btnEmpSave;
-        private System.Windows.Forms.Label lblEmpPasswordAdd;
         private System.Windows.Forms.TextBox txtEmpNIDAdd;
         private System.Windows.Forms.TextBox txtEmpPhoneAdd;
         private System.Windows.Forms.Label lblEmpNameAdd;
-        private System.Windows.Forms.TextBox txtEmpPasswordAdd;
         private System.Windows.Forms.TextBox txtEmpNameAdd;
     }
 }

@@ -349,6 +349,7 @@
             this.btnAddEmp.TabIndex = 27;
             this.btnAddEmp.Text = "Add Employee";
             this.btnAddEmp.UseVisualStyleBackColor = false;
+            this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
             // 
             // DemoAdminPage
             // 
