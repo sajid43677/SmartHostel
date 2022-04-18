@@ -33,9 +33,7 @@ namespace SmartHostel
             while(cnt == 0)
             {
                 MessageBox.Show("Employee Not Found! Please Try again!");
-                sql = "select * from WorkEmployee where NID = '"+this.txtEmpNIDUpdate.Text+"';";
-                ds = Da.ExecuteQuery(sql);
-                cnt = ds.Tables[0].Rows.Count;
+                return;
             }
 
             if(cnt > 0)

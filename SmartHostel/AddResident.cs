@@ -50,11 +50,15 @@ namespace SmartHostel
 
             if (rowCount == 1)
             {
-                MessageBox.Show("Employee Added.");
+                sql = "insert into ServiceAccess values('"+newId+"',0,0,0,0);";
+                var ds = Da.ExecuteDMLQuery(sql);
+                sql = "insert into ServiceExpense values('"+newId+"',0);";
+                ds = Da.ExecuteDMLQuery(sql);
+                MessageBox.Show("Resident Added.");
             }
             else
             {
-                MessageBox.Show("Employee Add Failed.");
+                MessageBox.Show("Resident Add Failed.");
             }
 
         }

@@ -33,8 +33,17 @@ namespace SmartHostel
             if (ds.Tables[0].Rows.Count == 1)
             {
                 MessageBox.Show("Wellcome");
-                new DemoAdminPage(this).Show();
-                this.Visible = false;
+                if(ds.Tables[0].Rows[0][5].ToString() == "admin")
+                {
+                    new DemoAdminPage(this).Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    new ManagerWindow(this).Show();
+                    this.Visible=false;
+                }
+                
             }
             else
             {
