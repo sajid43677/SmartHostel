@@ -48,34 +48,46 @@ namespace SmartHostel
         private void btnSerAccCon_Click(object sender, EventArgs e)
         {
             string sql = "";
+            DataSet ds = null;
             int cnt = 0;
             int totalExp = 0;
             if (this.ckbGymAcc.Checked)
             {
                 sql = "update ServiceAccess set Gym = 1 where Id = '"+Id+"';";
                 cnt = Da.ExecuteDMLQuery(sql);
-                totalExp += 500;
+                sql = "select * from ServiceNameExpense where Service = 'Gym';";
+                ds = Da.ExecuteQuery(sql);
+                totalExp += int.Parse(ds.Tables[0].Rows[0]["Expense"].ToString());
             }
             if (this.ckbGameRoomAcc.Checked)
             {
                 sql = "update ServiceAccess set Game = 1 where Id = '"+Id+"';";
                 cnt = Da.ExecuteDMLQuery(sql);
-                totalExp += 200;
+                sql = "select * from ServiceNameExpense where Service = 'Game';";
+                ds = Da.ExecuteQuery(sql);
+                totalExp += int.Parse(ds.Tables[0].Rows[0]["Expense"].ToString());
+
             }
             if (this.ckbLaundryAcc.Checked)
             {
                 sql = "update ServiceAccess set Laundry = 1 where Id = '"+Id+"';";
                 cnt = Da.ExecuteDMLQuery(sql);
-                totalExp += 200;
+                sql = "select * from ServiceNameExpense where Service = 'Laundry';";
+                ds = Da.ExecuteQuery(sql);
+                totalExp += int.Parse(ds.Tables[0].Rows[0]["Expense"].ToString());
+
             }
             if (this.ckbMeal.Checked)
             {
                 sql = "update ServiceAccess set Meal = 1 where Id = '"+Id+"';";
                 cnt = Da.ExecuteDMLQuery(sql);
-                totalExp += 3000;
+                sql = "select * from ServiceNameExpense where Service = 'Meal';";
+                ds = Da.ExecuteQuery(sql);
+                totalExp += int.Parse(ds.Tables[0].Rows[0]["Expense"].ToString());
+
             }
             sql = "update ServiceExpense set ServiceExpense = "+totalExp+" where Id = '"+Id+"';";
-            var ds = Da.ExecuteDMLQuery(sql);
+            var da = Da.ExecuteDMLQuery(sql);
             MessageBox.Show("Services Confirmed");
         }
     }

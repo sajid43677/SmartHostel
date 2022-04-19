@@ -54,7 +54,10 @@ namespace SmartHostel
                 var ds = Da.ExecuteDMLQuery(sql);
                 sql = "insert into ServiceExpense values('"+newId+"',0);";
                 ds = Da.ExecuteDMLQuery(sql);
-                MessageBox.Show("Resident Added.");
+                sql = "insert into ResidentRoomInfo values('"+newId+"','None',0);";
+                ds = Da.ExecuteDMLQuery(sql);
+                
+                MessageBox.Show("Resident Added.\nResident Id: "+ newId );
             }
             else
             {

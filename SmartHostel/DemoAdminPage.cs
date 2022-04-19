@@ -92,12 +92,31 @@ namespace SmartHostel
 
         private void btnRemoveRes_Click(object sender, EventArgs e)
         {
-            
+            new DeleteResident().Show();
+            this.Visible= false;
         }
 
         private void btnUpdateRes_Click(object sender, EventArgs e)
         {
             new UpdateResidentInfo(this).Show();
+            this.Visible = false;
+        }
+
+        private void btnManageRooms_Click(object sender, EventArgs e)
+        {
+            new ManageRoom(this).Show();
+            this.Visible = false;
+        }
+
+        private void btnManageExpence_Click(object sender, EventArgs e)
+        {
+            new ManageExpense(this).Show();
+            this.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new DeleteEmployee(this).Show();
             this.Visible = false;
         }
     }

@@ -39,21 +39,21 @@
             this.btnManageRooms = new System.Windows.Forms.Button();
             this.btnEmpSec = new System.Windows.Forms.Button();
             this.btnResSec = new System.Windows.Forms.Button();
-            this.pnlResSec = new System.Windows.Forms.Panel();
-            this.btnResSecBack = new System.Windows.Forms.Button();
-            this.btnRemoveRes = new System.Windows.Forms.Button();
-            this.btnUpdateRes = new System.Windows.Forms.Button();
-            this.btnAddRes = new System.Windows.Forms.Button();
             this.pnlEmpSec = new System.Windows.Forms.Panel();
             this.btnEmpSecBack = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnUpdateEmp = new System.Windows.Forms.Button();
             this.btnAddEmp = new System.Windows.Forms.Button();
+            this.pnlResSec = new System.Windows.Forms.Panel();
+            this.btnResSecBack = new System.Windows.Forms.Button();
+            this.btnRemoveRes = new System.Windows.Forms.Button();
+            this.btnUpdateRes = new System.Windows.Forms.Button();
+            this.btnAddRes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlResSec.SuspendLayout();
             this.pnlEmpSec.SuspendLayout();
+            this.pnlResSec.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,6 +89,7 @@
             this.btnManageExpence.TabIndex = 26;
             this.btnManageExpence.Text = "Manage Expence";
             this.btnManageExpence.UseVisualStyleBackColor = false;
+            this.btnManageExpence.Click += new System.EventHandler(this.btnManageExpence_Click);
             // 
             // pictureBox2
             // 
@@ -167,6 +168,7 @@
             this.btnManageRooms.TabIndex = 25;
             this.btnManageRooms.Text = "Manage Rooms";
             this.btnManageRooms.UseVisualStyleBackColor = false;
+            this.btnManageRooms.Click += new System.EventHandler(this.btnManageRooms_Click);
             // 
             // btnEmpSec
             // 
@@ -202,6 +204,83 @@
             this.btnResSec.UseVisualStyleBackColor = false;
             this.btnResSec.Click += new System.EventHandler(this.btnResSec_Click);
             // 
+            // pnlEmpSec
+            // 
+            this.pnlEmpSec.BackColor = System.Drawing.Color.White;
+            this.pnlEmpSec.BackgroundImage = global::SmartHostel.Properties.Resources.Hostel_Dormitory;
+            this.pnlEmpSec.Controls.Add(this.btnEmpSecBack);
+            this.pnlEmpSec.Controls.Add(this.button5);
+            this.pnlEmpSec.Controls.Add(this.btnUpdateEmp);
+            this.pnlEmpSec.Controls.Add(this.btnAddEmp);
+            this.pnlEmpSec.Location = new System.Drawing.Point(320, 100);
+            this.pnlEmpSec.Name = "pnlEmpSec";
+            this.pnlEmpSec.Size = new System.Drawing.Size(491, 335);
+            this.pnlEmpSec.TabIndex = 2;
+            this.pnlEmpSec.Visible = false;
+            // 
+            // btnEmpSecBack
+            // 
+            this.btnEmpSecBack.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEmpSecBack.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpSecBack.Location = new System.Drawing.Point(13, 295);
+            this.btnEmpSecBack.Name = "btnEmpSecBack";
+            this.btnEmpSecBack.Size = new System.Drawing.Size(75, 32);
+            this.btnEmpSecBack.TabIndex = 30;
+            this.btnEmpSecBack.Text = "Back";
+            this.btnEmpSecBack.UseVisualStyleBackColor = false;
+            this.btnEmpSecBack.Click += new System.EventHandler(this.btnEmpSecBack_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(136, 213);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(230, 54);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "Remove Employee";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnUpdateEmp
+            // 
+            this.btnUpdateEmp.BackColor = System.Drawing.Color.White;
+            this.btnUpdateEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnUpdateEmp.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
+            this.btnUpdateEmp.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateEmp.Image")));
+            this.btnUpdateEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateEmp.Location = new System.Drawing.Point(136, 142);
+            this.btnUpdateEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateEmp.Name = "btnUpdateEmp";
+            this.btnUpdateEmp.Size = new System.Drawing.Size(230, 54);
+            this.btnUpdateEmp.TabIndex = 29;
+            this.btnUpdateEmp.Text = "Update Employee";
+            this.btnUpdateEmp.UseVisualStyleBackColor = false;
+            this.btnUpdateEmp.Click += new System.EventHandler(this.btnUpdateEmp_Click);
+            // 
+            // btnAddEmp
+            // 
+            this.btnAddEmp.BackColor = System.Drawing.Color.White;
+            this.btnAddEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddEmp.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
+            this.btnAddEmp.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmp.Image")));
+            this.btnAddEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddEmp.Location = new System.Drawing.Point(136, 71);
+            this.btnAddEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddEmp.Name = "btnAddEmp";
+            this.btnAddEmp.Size = new System.Drawing.Size(230, 54);
+            this.btnAddEmp.TabIndex = 27;
+            this.btnAddEmp.Text = "Add Employee";
+            this.btnAddEmp.UseVisualStyleBackColor = false;
+            this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
+            // 
             // pnlResSec
             // 
             this.pnlResSec.BackColor = System.Drawing.Color.White;
@@ -210,7 +289,7 @@
             this.pnlResSec.Controls.Add(this.btnRemoveRes);
             this.pnlResSec.Controls.Add(this.btnUpdateRes);
             this.pnlResSec.Controls.Add(this.btnAddRes);
-            this.pnlResSec.Location = new System.Drawing.Point(318, 100);
+            this.pnlResSec.Location = new System.Drawing.Point(317, 100);
             this.pnlResSec.Name = "pnlResSec";
             this.pnlResSec.Size = new System.Drawing.Size(503, 338);
             this.pnlResSec.TabIndex = 1;
@@ -279,82 +358,6 @@
             this.btnAddRes.UseVisualStyleBackColor = false;
             this.btnAddRes.Click += new System.EventHandler(this.btnAddRes_Click);
             // 
-            // pnlEmpSec
-            // 
-            this.pnlEmpSec.BackColor = System.Drawing.Color.White;
-            this.pnlEmpSec.BackgroundImage = global::SmartHostel.Properties.Resources.Hostel_Dormitory;
-            this.pnlEmpSec.Controls.Add(this.btnEmpSecBack);
-            this.pnlEmpSec.Controls.Add(this.button5);
-            this.pnlEmpSec.Controls.Add(this.btnUpdateEmp);
-            this.pnlEmpSec.Controls.Add(this.btnAddEmp);
-            this.pnlEmpSec.Location = new System.Drawing.Point(321, 100);
-            this.pnlEmpSec.Name = "pnlEmpSec";
-            this.pnlEmpSec.Size = new System.Drawing.Size(500, 341);
-            this.pnlEmpSec.TabIndex = 2;
-            this.pnlEmpSec.Visible = false;
-            // 
-            // btnEmpSecBack
-            // 
-            this.btnEmpSecBack.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnEmpSecBack.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpSecBack.Location = new System.Drawing.Point(13, 295);
-            this.btnEmpSecBack.Name = "btnEmpSecBack";
-            this.btnEmpSecBack.Size = new System.Drawing.Size(75, 32);
-            this.btnEmpSecBack.TabIndex = 30;
-            this.btnEmpSecBack.Text = "Back";
-            this.btnEmpSecBack.UseVisualStyleBackColor = false;
-            this.btnEmpSecBack.Click += new System.EventHandler(this.btnEmpSecBack_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(136, 213);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(230, 54);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Remove Employee";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdateEmp
-            // 
-            this.btnUpdateEmp.BackColor = System.Drawing.Color.White;
-            this.btnUpdateEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnUpdateEmp.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.btnUpdateEmp.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateEmp.Image")));
-            this.btnUpdateEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateEmp.Location = new System.Drawing.Point(136, 142);
-            this.btnUpdateEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateEmp.Name = "btnUpdateEmp";
-            this.btnUpdateEmp.Size = new System.Drawing.Size(230, 54);
-            this.btnUpdateEmp.TabIndex = 29;
-            this.btnUpdateEmp.Text = "Update Employee";
-            this.btnUpdateEmp.UseVisualStyleBackColor = false;
-            this.btnUpdateEmp.Click += new System.EventHandler(this.btnUpdateEmp_Click);
-            // 
-            // btnAddEmp
-            // 
-            this.btnAddEmp.BackColor = System.Drawing.Color.White;
-            this.btnAddEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAddEmp.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.btnAddEmp.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmp.Image")));
-            this.btnAddEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddEmp.Location = new System.Drawing.Point(136, 71);
-            this.btnAddEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddEmp.Name = "btnAddEmp";
-            this.btnAddEmp.Size = new System.Drawing.Size(230, 54);
-            this.btnAddEmp.TabIndex = 27;
-            this.btnAddEmp.Text = "Add Employee";
-            this.btnAddEmp.UseVisualStyleBackColor = false;
-            this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
-            // 
             // DemoAdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,8 +376,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlResSec.ResumeLayout(false);
             this.pnlEmpSec.ResumeLayout(false);
+            this.pnlResSec.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

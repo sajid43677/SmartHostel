@@ -130,6 +130,7 @@
             this.btnMonthlyExpence.Text = "Monthly Expence";
             this.btnMonthlyExpence.UseVisualStyleBackColor = true;
             this.btnMonthlyExpence.Visible = false;
+            this.btnMonthlyExpence.Click += new System.EventHandler(this.btnMonthlyExpence_Click);
             // 
             // btnServiceAccess
             // 

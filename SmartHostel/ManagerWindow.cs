@@ -57,5 +57,11 @@ namespace SmartHostel
             this.Visible=false;
             new ServiceAccess(this,txtManWinUID.Text.ToString()).Show();
         }
+
+        private void btnMonthlyExpence_Click(object sender, EventArgs e)
+        {
+            this.Visible=false;
+            new ShowMonthlyExpense(this, txtManWinUID.Text.ToString()).Show();
+        }
     }
 }
