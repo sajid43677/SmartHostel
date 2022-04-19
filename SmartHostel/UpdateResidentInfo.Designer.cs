@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateResidentInfo));
             this.pnlUpdateResident = new System.Windows.Forms.Panel();
-            this.txtResidentMotherNameAdd = new System.Windows.Forms.TextBox();
-            this.txtResidentFatherNameAdd = new System.Windows.Forms.TextBox();
-            this.txtResidentOccupationAdd = new System.Windows.Forms.TextBox();
-            this.lblResidentNameAdd = new System.Windows.Forms.Label();
-            this.txtResidentPhoneAdd = new System.Windows.Forms.TextBox();
-            this.lblResidentPhoneAdd = new System.Windows.Forms.Label();
-            this.lblResidentOccupationAdd = new System.Windows.Forms.Label();
-            this.txtResidentNameAdd = new System.Windows.Forms.TextBox();
-            this.lblResidentFatherNameAdd = new System.Windows.Forms.Label();
-            this.lblResidentMotherNameAdd = new System.Windows.Forms.Label();
-            this.txtResidentEmailAdd = new System.Windows.Forms.TextBox();
-            this.lblResidentEmailAdd = new System.Windows.Forms.Label();
-            this.btnResidentUpdate = new System.Windows.Forms.Button();
-            this.btnResidentIdSearch = new System.Windows.Forms.Button();
-            this.txtSearchResidentId = new System.Windows.Forms.TextBox();
-            this.lblSearchResidentIdUpdate = new System.Windows.Forms.Label();
             this.btnResidentClear = new System.Windows.Forms.Button();
+            this.lblSearchResidentIdUpdate = new System.Windows.Forms.Label();
+            this.txtSearchResidentId = new System.Windows.Forms.TextBox();
+            this.btnResidentIdSearch = new System.Windows.Forms.Button();
+            this.btnResidentUpdate = new System.Windows.Forms.Button();
+            this.lblResidentEmailUpdate = new System.Windows.Forms.Label();
+            this.txtResidentEmailUpdate = new System.Windows.Forms.TextBox();
+            this.lblResidentMotherNameUpdate = new System.Windows.Forms.Label();
+            this.txtResidentMotherNameUpdate = new System.Windows.Forms.TextBox();
+            this.txtResidentFatherNameUpdate = new System.Windows.Forms.TextBox();
+            this.txtResidentOccupationUpdate = new System.Windows.Forms.TextBox();
+            this.lblResidentNameUpdate = new System.Windows.Forms.Label();
+            this.txtResidentPhoneUpdate = new System.Windows.Forms.TextBox();
+            this.lblResidentPhoneUpdate = new System.Windows.Forms.Label();
+            this.lblResidentOccupationUpdate = new System.Windows.Forms.Label();
+            this.txtResidentNameUpdate = new System.Windows.Forms.TextBox();
+            this.lblResidentFatherNameUpdate = new System.Windows.Forms.Label();
             this.pnlUpdateResident.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,181 +58,35 @@
             this.pnlUpdateResident.Controls.Add(this.txtSearchResidentId);
             this.pnlUpdateResident.Controls.Add(this.btnResidentIdSearch);
             this.pnlUpdateResident.Controls.Add(this.btnResidentUpdate);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentEmailAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentEmailAdd);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentMotherNameAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentMotherNameAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentFatherNameAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentOccupationAdd);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentNameAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentPhoneAdd);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentPhoneAdd);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentOccupationAdd);
-            this.pnlUpdateResident.Controls.Add(this.txtResidentNameAdd);
-            this.pnlUpdateResident.Controls.Add(this.lblResidentFatherNameAdd);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentEmailUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentEmailUpdate);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentMotherNameUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentMotherNameUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentFatherNameUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentOccupationUpdate);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentNameUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentPhoneUpdate);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentPhoneUpdate);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentOccupationUpdate);
+            this.pnlUpdateResident.Controls.Add(this.txtResidentNameUpdate);
+            this.pnlUpdateResident.Controls.Add(this.lblResidentFatherNameUpdate);
             this.pnlUpdateResident.Location = new System.Drawing.Point(0, 1);
             this.pnlUpdateResident.Name = "pnlUpdateResident";
             this.pnlUpdateResident.Size = new System.Drawing.Size(863, 530);
             this.pnlUpdateResident.TabIndex = 34;
             // 
-            // txtResidentMotherNameAdd
+            // btnResidentClear
             // 
-            this.txtResidentMotherNameAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentMotherNameAdd.Location = new System.Drawing.Point(301, 261);
-            this.txtResidentMotherNameAdd.Multiline = true;
-            this.txtResidentMotherNameAdd.Name = "txtResidentMotherNameAdd";
-            this.txtResidentMotherNameAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentMotherNameAdd.TabIndex = 17;
-            // 
-            // txtResidentFatherNameAdd
-            // 
-            this.txtResidentFatherNameAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentFatherNameAdd.Location = new System.Drawing.Point(301, 214);
-            this.txtResidentFatherNameAdd.Multiline = true;
-            this.txtResidentFatherNameAdd.Name = "txtResidentFatherNameAdd";
-            this.txtResidentFatherNameAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentFatherNameAdd.TabIndex = 16;
-            // 
-            // txtResidentOccupationAdd
-            // 
-            this.txtResidentOccupationAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentOccupationAdd.Location = new System.Drawing.Point(301, 402);
-            this.txtResidentOccupationAdd.Multiline = true;
-            this.txtResidentOccupationAdd.Name = "txtResidentOccupationAdd";
-            this.txtResidentOccupationAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentOccupationAdd.TabIndex = 30;
-            // 
-            // lblResidentNameAdd
-            // 
-            this.lblResidentNameAdd.AutoSize = true;
-            this.lblResidentNameAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentNameAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentNameAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentNameAdd.Location = new System.Drawing.Point(197, 180);
-            this.lblResidentNameAdd.Name = "lblResidentNameAdd";
-            this.lblResidentNameAdd.Size = new System.Drawing.Size(66, 28);
-            this.lblResidentNameAdd.TabIndex = 21;
-            this.lblResidentNameAdd.Text = "Name";
-            // 
-            // txtResidentPhoneAdd
-            // 
-            this.txtResidentPhoneAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentPhoneAdd.Location = new System.Drawing.Point(301, 355);
-            this.txtResidentPhoneAdd.Multiline = true;
-            this.txtResidentPhoneAdd.Name = "txtResidentPhoneAdd";
-            this.txtResidentPhoneAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentPhoneAdd.TabIndex = 29;
-            // 
-            // lblResidentPhoneAdd
-            // 
-            this.lblResidentPhoneAdd.AutoSize = true;
-            this.lblResidentPhoneAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentPhoneAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentPhoneAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentPhoneAdd.Location = new System.Drawing.Point(115, 362);
-            this.lblResidentPhoneAdd.Name = "lblResidentPhoneAdd";
-            this.lblResidentPhoneAdd.Size = new System.Drawing.Size(148, 28);
-            this.lblResidentPhoneAdd.TabIndex = 26;
-            this.lblResidentPhoneAdd.Text = "Phone Number";
-            // 
-            // lblResidentOccupationAdd
-            // 
-            this.lblResidentOccupationAdd.AutoSize = true;
-            this.lblResidentOccupationAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentOccupationAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentOccupationAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentOccupationAdd.Location = new System.Drawing.Point(148, 404);
-            this.lblResidentOccupationAdd.Name = "lblResidentOccupationAdd";
-            this.lblResidentOccupationAdd.Size = new System.Drawing.Size(115, 28);
-            this.lblResidentOccupationAdd.TabIndex = 27;
-            this.lblResidentOccupationAdd.Text = "Occupation";
-            // 
-            // txtResidentNameAdd
-            // 
-            this.txtResidentNameAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentNameAdd.Location = new System.Drawing.Point(301, 167);
-            this.txtResidentNameAdd.Multiline = true;
-            this.txtResidentNameAdd.Name = "txtResidentNameAdd";
-            this.txtResidentNameAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentNameAdd.TabIndex = 15;
-            // 
-            // lblResidentFatherNameAdd
-            // 
-            this.lblResidentFatherNameAdd.AutoSize = true;
-            this.lblResidentFatherNameAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentFatherNameAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentFatherNameAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentFatherNameAdd.Location = new System.Drawing.Point(121, 227);
-            this.lblResidentFatherNameAdd.Name = "lblResidentFatherNameAdd";
-            this.lblResidentFatherNameAdd.Size = new System.Drawing.Size(142, 28);
-            this.lblResidentFatherNameAdd.TabIndex = 22;
-            this.lblResidentFatherNameAdd.Text = "Father\'s Name";
-            // 
-            // lblResidentMotherNameAdd
-            // 
-            this.lblResidentMotherNameAdd.AutoSize = true;
-            this.lblResidentMotherNameAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentMotherNameAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentMotherNameAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentMotherNameAdd.Location = new System.Drawing.Point(115, 274);
-            this.lblResidentMotherNameAdd.Name = "lblResidentMotherNameAdd";
-            this.lblResidentMotherNameAdd.Size = new System.Drawing.Size(149, 28);
-            this.lblResidentMotherNameAdd.TabIndex = 31;
-            this.lblResidentMotherNameAdd.Text = "Mother\'s Name";
-            // 
-            // txtResidentEmailAdd
-            // 
-            this.txtResidentEmailAdd.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtResidentEmailAdd.Location = new System.Drawing.Point(301, 308);
-            this.txtResidentEmailAdd.Multiline = true;
-            this.txtResidentEmailAdd.Name = "txtResidentEmailAdd";
-            this.txtResidentEmailAdd.Size = new System.Drawing.Size(322, 41);
-            this.txtResidentEmailAdd.TabIndex = 32;
-            // 
-            // lblResidentEmailAdd
-            // 
-            this.lblResidentEmailAdd.AutoSize = true;
-            this.lblResidentEmailAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lblResidentEmailAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResidentEmailAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblResidentEmailAdd.Location = new System.Drawing.Point(175, 321);
-            this.lblResidentEmailAdd.Name = "lblResidentEmailAdd";
-            this.lblResidentEmailAdd.Size = new System.Drawing.Size(88, 28);
-            this.lblResidentEmailAdd.TabIndex = 33;
-            this.lblResidentEmailAdd.Text = "Email-Id";
-            // 
-            // btnResidentUpdate
-            // 
-            this.btnResidentUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnResidentUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResidentUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnResidentUpdate.Location = new System.Drawing.Point(407, 456);
-            this.btnResidentUpdate.Name = "btnResidentUpdate";
-            this.btnResidentUpdate.Size = new System.Drawing.Size(98, 43);
-            this.btnResidentUpdate.TabIndex = 34;
-            this.btnResidentUpdate.Text = "Update";
-            this.btnResidentUpdate.UseVisualStyleBackColor = false;
-            // 
-            // btnResidentIdSearch
-            // 
-            this.btnResidentIdSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnResidentIdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResidentIdSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnResidentIdSearch.Location = new System.Drawing.Point(407, 90);
-            this.btnResidentIdSearch.Name = "btnResidentIdSearch";
-            this.btnResidentIdSearch.Size = new System.Drawing.Size(98, 40);
-            this.btnResidentIdSearch.TabIndex = 35;
-            this.btnResidentIdSearch.Text = "Search";
-            this.btnResidentIdSearch.UseVisualStyleBackColor = false;
-            // 
-            // txtSearchResidentId
-            // 
-            this.txtSearchResidentId.BackColor = System.Drawing.Color.RosyBrown;
-            this.txtSearchResidentId.Location = new System.Drawing.Point(301, 48);
-            this.txtSearchResidentId.Multiline = true;
-            this.txtSearchResidentId.Name = "txtSearchResidentId";
-            this.txtSearchResidentId.Size = new System.Drawing.Size(322, 36);
-            this.txtSearchResidentId.TabIndex = 36;
+            this.btnResidentClear.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnResidentClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResidentClear.ForeColor = System.Drawing.Color.Black;
+            this.btnResidentClear.Location = new System.Drawing.Point(745, 488);
+            this.btnResidentClear.Name = "btnResidentClear";
+            this.btnResidentClear.Size = new System.Drawing.Size(105, 32);
+            this.btnResidentClear.TabIndex = 38;
+            this.btnResidentClear.Text = "Clear";
+            this.btnResidentClear.UseVisualStyleBackColor = false;
+            this.btnResidentClear.Click += new System.EventHandler(this.btnResidentClear_Click);
             // 
             // lblSearchResidentIdUpdate
             // 
@@ -246,17 +100,179 @@
             this.lblSearchResidentIdUpdate.TabIndex = 37;
             this.lblSearchResidentIdUpdate.Text = "Id";
             // 
-            // btnResidentClear
+            // txtSearchResidentId
             // 
-            this.btnResidentClear.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnResidentClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResidentClear.ForeColor = System.Drawing.Color.Black;
-            this.btnResidentClear.Location = new System.Drawing.Point(745, 488);
-            this.btnResidentClear.Name = "btnResidentClear";
-            this.btnResidentClear.Size = new System.Drawing.Size(105, 32);
-            this.btnResidentClear.TabIndex = 38;
-            this.btnResidentClear.Text = "Clear";
-            this.btnResidentClear.UseVisualStyleBackColor = false;
+            this.txtSearchResidentId.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtSearchResidentId.Location = new System.Drawing.Point(301, 48);
+            this.txtSearchResidentId.Multiline = true;
+            this.txtSearchResidentId.Name = "txtSearchResidentId";
+            this.txtSearchResidentId.Size = new System.Drawing.Size(322, 36);
+            this.txtSearchResidentId.TabIndex = 36;
+            // 
+            // btnResidentIdSearch
+            // 
+            this.btnResidentIdSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnResidentIdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResidentIdSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnResidentIdSearch.Location = new System.Drawing.Point(407, 90);
+            this.btnResidentIdSearch.Name = "btnResidentIdSearch";
+            this.btnResidentIdSearch.Size = new System.Drawing.Size(98, 40);
+            this.btnResidentIdSearch.TabIndex = 35;
+            this.btnResidentIdSearch.Text = "Search";
+            this.btnResidentIdSearch.UseVisualStyleBackColor = false;
+            this.btnResidentIdSearch.Click += new System.EventHandler(this.btnResidentIdSearch_Click);
+            // 
+            // btnResidentUpdate
+            // 
+            this.btnResidentUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnResidentUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResidentUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnResidentUpdate.Location = new System.Drawing.Point(407, 456);
+            this.btnResidentUpdate.Name = "btnResidentUpdate";
+            this.btnResidentUpdate.Size = new System.Drawing.Size(98, 43);
+            this.btnResidentUpdate.TabIndex = 34;
+            this.btnResidentUpdate.Text = "Update";
+            this.btnResidentUpdate.UseVisualStyleBackColor = false;
+            this.btnResidentUpdate.Visible = false;
+            this.btnResidentUpdate.Click += new System.EventHandler(this.btnResidentUpdate_Click);
+            // 
+            // lblResidentEmailUpdate
+            // 
+            this.lblResidentEmailUpdate.AutoSize = true;
+            this.lblResidentEmailUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentEmailUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentEmailUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentEmailUpdate.Location = new System.Drawing.Point(175, 321);
+            this.lblResidentEmailUpdate.Name = "lblResidentEmailUpdate";
+            this.lblResidentEmailUpdate.Size = new System.Drawing.Size(88, 28);
+            this.lblResidentEmailUpdate.TabIndex = 33;
+            this.lblResidentEmailUpdate.Text = "Email-Id";
+            this.lblResidentEmailUpdate.Visible = false;
+            // 
+            // txtResidentEmailUpdate
+            // 
+            this.txtResidentEmailUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentEmailUpdate.Location = new System.Drawing.Point(301, 308);
+            this.txtResidentEmailUpdate.Multiline = true;
+            this.txtResidentEmailUpdate.Name = "txtResidentEmailUpdate";
+            this.txtResidentEmailUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentEmailUpdate.TabIndex = 32;
+            this.txtResidentEmailUpdate.Visible = false;
+            // 
+            // lblResidentMotherNameUpdate
+            // 
+            this.lblResidentMotherNameUpdate.AutoSize = true;
+            this.lblResidentMotherNameUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentMotherNameUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentMotherNameUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentMotherNameUpdate.Location = new System.Drawing.Point(115, 274);
+            this.lblResidentMotherNameUpdate.Name = "lblResidentMotherNameUpdate";
+            this.lblResidentMotherNameUpdate.Size = new System.Drawing.Size(149, 28);
+            this.lblResidentMotherNameUpdate.TabIndex = 31;
+            this.lblResidentMotherNameUpdate.Text = "Mother\'s Name";
+            this.lblResidentMotherNameUpdate.Visible = false;
+            // 
+            // txtResidentMotherNameUpdate
+            // 
+            this.txtResidentMotherNameUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentMotherNameUpdate.Location = new System.Drawing.Point(301, 261);
+            this.txtResidentMotherNameUpdate.Multiline = true;
+            this.txtResidentMotherNameUpdate.Name = "txtResidentMotherNameUpdate";
+            this.txtResidentMotherNameUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentMotherNameUpdate.TabIndex = 17;
+            this.txtResidentMotherNameUpdate.Visible = false;
+            // 
+            // txtResidentFatherNameUpdate
+            // 
+            this.txtResidentFatherNameUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentFatherNameUpdate.Location = new System.Drawing.Point(301, 214);
+            this.txtResidentFatherNameUpdate.Multiline = true;
+            this.txtResidentFatherNameUpdate.Name = "txtResidentFatherNameUpdate";
+            this.txtResidentFatherNameUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentFatherNameUpdate.TabIndex = 16;
+            this.txtResidentFatherNameUpdate.Visible = false;
+            // 
+            // txtResidentOccupationUpdate
+            // 
+            this.txtResidentOccupationUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentOccupationUpdate.Location = new System.Drawing.Point(301, 402);
+            this.txtResidentOccupationUpdate.Multiline = true;
+            this.txtResidentOccupationUpdate.Name = "txtResidentOccupationUpdate";
+            this.txtResidentOccupationUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentOccupationUpdate.TabIndex = 30;
+            this.txtResidentOccupationUpdate.Visible = false;
+            // 
+            // lblResidentNameUpdate
+            // 
+            this.lblResidentNameUpdate.AutoSize = true;
+            this.lblResidentNameUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentNameUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentNameUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentNameUpdate.Location = new System.Drawing.Point(197, 180);
+            this.lblResidentNameUpdate.Name = "lblResidentNameUpdate";
+            this.lblResidentNameUpdate.Size = new System.Drawing.Size(66, 28);
+            this.lblResidentNameUpdate.TabIndex = 21;
+            this.lblResidentNameUpdate.Text = "Name";
+            this.lblResidentNameUpdate.Visible = false;
+            // 
+            // txtResidentPhoneUpdate
+            // 
+            this.txtResidentPhoneUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentPhoneUpdate.Location = new System.Drawing.Point(301, 355);
+            this.txtResidentPhoneUpdate.Multiline = true;
+            this.txtResidentPhoneUpdate.Name = "txtResidentPhoneUpdate";
+            this.txtResidentPhoneUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentPhoneUpdate.TabIndex = 29;
+            this.txtResidentPhoneUpdate.Visible = false;
+            // 
+            // lblResidentPhoneUpdate
+            // 
+            this.lblResidentPhoneUpdate.AutoSize = true;
+            this.lblResidentPhoneUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentPhoneUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentPhoneUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentPhoneUpdate.Location = new System.Drawing.Point(115, 362);
+            this.lblResidentPhoneUpdate.Name = "lblResidentPhoneUpdate";
+            this.lblResidentPhoneUpdate.Size = new System.Drawing.Size(148, 28);
+            this.lblResidentPhoneUpdate.TabIndex = 26;
+            this.lblResidentPhoneUpdate.Text = "Phone Number";
+            this.lblResidentPhoneUpdate.Visible = false;
+            // 
+            // lblResidentOccupationUpdate
+            // 
+            this.lblResidentOccupationUpdate.AutoSize = true;
+            this.lblResidentOccupationUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentOccupationUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentOccupationUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentOccupationUpdate.Location = new System.Drawing.Point(148, 404);
+            this.lblResidentOccupationUpdate.Name = "lblResidentOccupationUpdate";
+            this.lblResidentOccupationUpdate.Size = new System.Drawing.Size(115, 28);
+            this.lblResidentOccupationUpdate.TabIndex = 27;
+            this.lblResidentOccupationUpdate.Text = "Occupation";
+            this.lblResidentOccupationUpdate.Visible = false;
+            // 
+            // txtResidentNameUpdate
+            // 
+            this.txtResidentNameUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.txtResidentNameUpdate.Location = new System.Drawing.Point(301, 167);
+            this.txtResidentNameUpdate.Multiline = true;
+            this.txtResidentNameUpdate.Name = "txtResidentNameUpdate";
+            this.txtResidentNameUpdate.Size = new System.Drawing.Size(322, 41);
+            this.txtResidentNameUpdate.TabIndex = 15;
+            this.txtResidentNameUpdate.Visible = false;
+            // 
+            // lblResidentFatherNameUpdate
+            // 
+            this.lblResidentFatherNameUpdate.AutoSize = true;
+            this.lblResidentFatherNameUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblResidentFatherNameUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResidentFatherNameUpdate.ForeColor = System.Drawing.Color.Black;
+            this.lblResidentFatherNameUpdate.Location = new System.Drawing.Point(121, 227);
+            this.lblResidentFatherNameUpdate.Name = "lblResidentFatherNameUpdate";
+            this.lblResidentFatherNameUpdate.Size = new System.Drawing.Size(142, 28);
+            this.lblResidentFatherNameUpdate.TabIndex = 22;
+            this.lblResidentFatherNameUpdate.Text = "Father\'s Name";
+            this.lblResidentFatherNameUpdate.Visible = false;
             // 
             // UpdateResidentInfo
             // 
@@ -266,6 +282,7 @@
             this.Controls.Add(this.pnlUpdateResident);
             this.Name = "UpdateResidentInfo";
             this.Text = "UpdateResidentInfo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateResidentInfo_FormClosed);
             this.pnlUpdateResident.ResumeLayout(false);
             this.pnlUpdateResident.PerformLayout();
             this.ResumeLayout(false);
@@ -280,17 +297,17 @@
         private System.Windows.Forms.TextBox txtSearchResidentId;
         private System.Windows.Forms.Button btnResidentIdSearch;
         private System.Windows.Forms.Button btnResidentUpdate;
-        private System.Windows.Forms.Label lblResidentEmailAdd;
-        private System.Windows.Forms.TextBox txtResidentEmailAdd;
-        private System.Windows.Forms.Label lblResidentMotherNameAdd;
-        private System.Windows.Forms.TextBox txtResidentMotherNameAdd;
-        private System.Windows.Forms.TextBox txtResidentFatherNameAdd;
-        private System.Windows.Forms.TextBox txtResidentOccupationAdd;
-        private System.Windows.Forms.Label lblResidentNameAdd;
-        private System.Windows.Forms.TextBox txtResidentPhoneAdd;
-        private System.Windows.Forms.Label lblResidentPhoneAdd;
-        private System.Windows.Forms.Label lblResidentOccupationAdd;
-        private System.Windows.Forms.TextBox txtResidentNameAdd;
-        private System.Windows.Forms.Label lblResidentFatherNameAdd;
+        private System.Windows.Forms.Label lblResidentEmailUpdate;
+        private System.Windows.Forms.TextBox txtResidentEmailUpdate;
+        private System.Windows.Forms.Label lblResidentMotherNameUpdate;
+        private System.Windows.Forms.TextBox txtResidentMotherNameUpdate;
+        private System.Windows.Forms.TextBox txtResidentFatherNameUpdate;
+        private System.Windows.Forms.TextBox txtResidentOccupationUpdate;
+        private System.Windows.Forms.Label lblResidentNameUpdate;
+        private System.Windows.Forms.TextBox txtResidentPhoneUpdate;
+        private System.Windows.Forms.Label lblResidentPhoneUpdate;
+        private System.Windows.Forms.Label lblResidentOccupationUpdate;
+        private System.Windows.Forms.TextBox txtResidentNameUpdate;
+        private System.Windows.Forms.Label lblResidentFatherNameUpdate;
     }
 }

@@ -50,8 +50,18 @@ namespace SmartHostel
             Application.Exit();
         }
 
+        private void showDataRes()
+        {
+            string sql = "select * from WorkEmployee where NID = '"+this.txtEmpNIDUpdate+"';";
+            var ds = Da.ExecuteQuery(sql);
+            this.txtEmpNIDUpdate.ReadOnly = true;
+            this.txtEmpNameUpdate.Text = ds.Tables[0].Rows[0]["Name"].ToString();
+            this.txtEmpPhoneUpdate.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
+        }
+
         private void btnEmpUpdate_Click(object sender, EventArgs e)
         {
+            showDataRes();
             string sql = "update WorkEmployee set PhoneNumber = '"+this.txtEmpPhoneUpdate.Text+"',Name = '"+this.txtEmpNameUpdate.Text+"' where NID = '"+this.txtEmpNIDUpdate.Text+"'; ";
             int cnt = Da.ExecuteDMLQuery(sql);
             if(cnt > 0)

@@ -210,7 +210,7 @@
             this.pnlResSec.Controls.Add(this.btnRemoveRes);
             this.pnlResSec.Controls.Add(this.btnUpdateRes);
             this.pnlResSec.Controls.Add(this.btnAddRes);
-            this.pnlResSec.Location = new System.Drawing.Point(336, 100);
+            this.pnlResSec.Location = new System.Drawing.Point(318, 100);
             this.pnlResSec.Name = "pnlResSec";
             this.pnlResSec.Size = new System.Drawing.Size(503, 338);
             this.pnlResSec.TabIndex = 1;
@@ -243,6 +243,7 @@
             this.btnRemoveRes.TabIndex = 28;
             this.btnRemoveRes.Text = "Remove Resident";
             this.btnRemoveRes.UseVisualStyleBackColor = false;
+            this.btnRemoveRes.Click += new System.EventHandler(this.btnRemoveRes_Click);
             // 
             // btnUpdateRes
             // 
@@ -259,6 +260,7 @@
             this.btnUpdateRes.TabIndex = 29;
             this.btnUpdateRes.Text = "Update Resident";
             this.btnUpdateRes.UseVisualStyleBackColor = false;
+            this.btnUpdateRes.Click += new System.EventHandler(this.btnUpdateRes_Click);
             // 
             // btnAddRes
             // 
@@ -285,7 +287,7 @@
             this.pnlEmpSec.Controls.Add(this.button5);
             this.pnlEmpSec.Controls.Add(this.btnUpdateEmp);
             this.pnlEmpSec.Controls.Add(this.btnAddEmp);
-            this.pnlEmpSec.Location = new System.Drawing.Point(336, 100);
+            this.pnlEmpSec.Location = new System.Drawing.Point(321, 100);
             this.pnlEmpSec.Name = "pnlEmpSec";
             this.pnlEmpSec.Size = new System.Drawing.Size(500, 341);
             this.pnlEmpSec.TabIndex = 2;

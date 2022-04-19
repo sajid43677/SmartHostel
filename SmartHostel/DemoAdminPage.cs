@@ -89,5 +89,16 @@ namespace SmartHostel
             new AddResident(this).Show();
             this.Visible = false;
         }
+
+        private void btnRemoveRes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnUpdateRes_Click(object sender, EventArgs e)
+        {
+            new UpdateResidentInfo(this).Show();
+            this.Visible = false;
+        }
     }
 }

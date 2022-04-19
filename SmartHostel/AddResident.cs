@@ -78,5 +78,10 @@ namespace SmartHostel
             this.txtResidentEmailAdd.Clear();
             this.txtResidentPhoneAdd.Clear();
         }
+
+        private void AddResident_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

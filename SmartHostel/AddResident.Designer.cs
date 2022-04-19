@@ -269,6 +269,7 @@
             this.Name = "AddResident";
             this.Text = "Add Resident";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddResident_FormClosed);
+            this.Load += new System.EventHandler(this.AddResident_Load);
             this.pnlResidentAdd.ResumeLayout(false);
             this.pnlResidentAdd.PerformLayout();
             this.ResumeLayout(false);
