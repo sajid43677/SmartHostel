@@ -179,6 +179,9 @@
     <EmbeddedResource Include="AddResident.resx">
       <DependentUpon>AddResident.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ResidentSection.resx">
+      <DependentUpon>ResidentSection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ServiceAccess.resx">
       <DependentUpon>ServiceAccess.cs</DependentUpon>
     </EmbeddedResource>

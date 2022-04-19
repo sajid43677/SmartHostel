@@ -153,6 +153,7 @@
             this.ClientSize = new System.Drawing.Size(799, 450);
             this.Controls.Add(this.pnl);
             this.Name = "EmployeeInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeInfo";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeInfo_FormClosed);
             this.pnl.ResumeLayout(false);

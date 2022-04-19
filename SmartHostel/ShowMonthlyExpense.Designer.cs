@@ -367,6 +367,7 @@
             this.Controls.Add(this.lbShowMonGym);
             this.Controls.Add(this.lbUID);
             this.Name = "ShowMonthlyExpense";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShowMonthlyExpense";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowMonthlyExpense_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

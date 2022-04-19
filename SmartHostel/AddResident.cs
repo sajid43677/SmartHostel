@@ -44,24 +44,31 @@ namespace SmartHostel
 
         private void btnResidentSave_Click(object sender, EventArgs e)
         {
-            string newId = AutoId();
-            string sql = "insert into ResidentInfo values('"+newId+"','"+this.txtResidentNameAdd.Text+"','"+this.txtResidentFatherNameAdd.Text+"','"+this.txtResidentMotherNameAdd.Text+"','"+this.txtResidentEmailAdd.Text+"','"+this.txtResidentPhoneAdd.Text+"','"+this.txtResidentOccupationAdd.Text+"','"+this.txtResidentNIDAdd.Text+"');";
-            var rowCount = this.Da.ExecuteDMLQuery(sql);
+            try
+            {
+                string newId = AutoId();
+                string sql = "insert into ResidentInfo values('"+newId+"','"+this.txtResidentNameAdd.Text+"','"+this.txtResidentFatherNameAdd.Text+"','"+this.txtResidentMotherNameAdd.Text+"','"+this.txtResidentEmailAdd.Text+"','"+this.txtResidentPhoneAdd.Text+"','"+this.txtResidentOccupationAdd.Text+"','"+this.txtResidentNIDAdd.Text+"');";
+                var rowCount = this.Da.ExecuteDMLQuery(sql);
 
-            if (rowCount == 1)
-            {
-                sql = "insert into ServiceAccess values('"+newId+"',0,0,0,0);";
-                var ds = Da.ExecuteDMLQuery(sql);
-                sql = "insert into ServiceExpense values('"+newId+"',0);";
-                ds = Da.ExecuteDMLQuery(sql);
-                sql = "insert into ResidentRoomInfo values('"+newId+"','None',0);";
-                ds = Da.ExecuteDMLQuery(sql);
-                
-                MessageBox.Show("Resident Added.\nResident Id: "+ newId );
+                if (rowCount == 1)
+                {
+                    sql = "insert into ServiceAccess values('"+newId+"',0,0,0,0);";
+                    var ds = Da.ExecuteDMLQuery(sql);
+                    sql = "insert into ServiceExpense values('"+newId+"',0);";
+                    ds = Da.ExecuteDMLQuery(sql);
+                    sql = "insert into ResidentRoomInfo values('"+newId+"','None',0);";
+                    ds = Da.ExecuteDMLQuery(sql);
+
+                    MessageBox.Show("Resident Added.\nResident Id: "+ newId);
+                }
+                else
+                {
+                    MessageBox.Show("Resident Add Failed.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Resident Add Failed.");
+                MessageBox.Show("Error Occured." + ex.Message.ToString());
             }
 
         }

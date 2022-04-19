@@ -12,14 +12,16 @@ namespace SmartHostel
 {
     public partial class DemoAdminPage : Form
     {
+        private Form F { get; set; }
         public DemoAdminPage()
         {
             InitializeComponent();
         }
 
-        public DemoAdminPage(Form login)
+        public DemoAdminPage(Form f)
         {
             InitializeComponent();
+            this.F = f;
         }
 
         private void btnResSec_Click(object sender, EventArgs e)
@@ -32,7 +34,8 @@ namespace SmartHostel
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Visible = false;
+            F.Visible = true;
         }
 
         private void btnResSecBack_Click(object sender, EventArgs e)

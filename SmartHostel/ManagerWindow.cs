@@ -39,17 +39,24 @@ namespace SmartHostel
 
         private void btnManWinSearch_Click(object sender, EventArgs e)
         {
-            string sql = "select * from ResidentInfo where Id = '"+this.txtManWinUID.Text+"';";
-            var ds = Da.ExecuteQuery(sql);
-            while(ds.Tables[0].Rows.Count == 0)
+            try
             {
-                MessageBox.Show("Invalid Id");
-                return;
+                string sql = "select * from ResidentInfo where Id = '"+this.txtManWinUID.Text+"';";
+                var ds = Da.ExecuteQuery(sql);
+                while (ds.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("Invalid Id");
+                    return;
+                }
+                this.lbManWinName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
+                this.lbManWinPhnNUm.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
+                this.btnServiceAccess.Visible = true;
+                this.btnMonthlyExpence.Visible = true;
             }
-            this.lbManWinName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
-            this.lbManWinPhnNUm.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
-            this.btnServiceAccess.Visible = true;
-            this.btnMonthlyExpence.Visible = true;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured." + ex.Message.ToString());
+            }
         }
 
         private void btnServiceAccess_Click(object sender, EventArgs e)

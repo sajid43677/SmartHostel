@@ -281,6 +281,7 @@
             this.ClientSize = new System.Drawing.Size(862, 533);
             this.Controls.Add(this.pnlUpdateResident);
             this.Name = "UpdateResidentInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateResidentInfo";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateResidentInfo_FormClosed);
             this.pnlUpdateResident.ResumeLayout(false);

@@ -40,22 +40,29 @@ namespace SmartHostel
 
         private void btnDeleteResidentSearch_Click(object sender, EventArgs e)
         {
-            string sql = "select * from ResidentInfo where Id = '"+this.txtDeleteResidentId.Text+"';";
-            var ds = Da.ExecuteQuery(sql);
-            if(ds.Tables[0].Rows.Count == 1)
+            try
             {
-                showAll();
-                this.txtDeleteResidentFatherName.Text = ds.Tables[0].Rows[0]["FatherName"].ToString();
-                this.txtDeleteResidentName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
-                this.txtDeleteResidentMotherName.Text = ds.Tables[0].Rows[0]["MotherName"].ToString();
-                this.txtDeleteResidentEmail.Text = ds.Tables[0].Rows[0]["EmailId"].ToString();
-                this.txtDeleteResidentPhone.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
-                this.txtDeleteResidentOccupation.Text = ds.Tables[0].Rows[0]["Occuption"].ToString();
-                this.txtDeleteResidentNID.Text = ds.Tables[0].Rows[0]["NID"].ToString();
+                string sql = "select * from ResidentInfo where Id = '"+this.txtDeleteResidentId.Text+"';";
+                var ds = Da.ExecuteQuery(sql);
+                if (ds.Tables[0].Rows.Count == 1)
+                {
+                    showAll();
+                    this.txtDeleteResidentFatherName.Text = ds.Tables[0].Rows[0]["FatherName"].ToString();
+                    this.txtDeleteResidentName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
+                    this.txtDeleteResidentMotherName.Text = ds.Tables[0].Rows[0]["MotherName"].ToString();
+                    this.txtDeleteResidentEmail.Text = ds.Tables[0].Rows[0]["EmailId"].ToString();
+                    this.txtDeleteResidentPhone.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
+                    this.txtDeleteResidentOccupation.Text = ds.Tables[0].Rows[0]["Occuption"].ToString();
+                    this.txtDeleteResidentNID.Text = ds.Tables[0].Rows[0]["NID"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid ID");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid ID");
+                MessageBox.Show("Error Occured." + ex.Message.ToString());
             }
         }
 

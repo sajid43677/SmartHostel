@@ -28,29 +28,42 @@ namespace SmartHostel
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string sql = "select * from EmployeeInfo where Id = '" + this.txtUserId.Text + "' and Password = '" + this.txtUserPass.Text + "';";
-            var ds = Da.ExecuteQuery(sql);
-            if (ds.Tables[0].Rows.Count == 1)
+            try
             {
-                MessageBox.Show("Wellcome");
-                if(ds.Tables[0].Rows[0][5].ToString() == "admin")
+                string sql = "select * from EmployeeInfo where Id = '" + this.txtUserId.Text + "' and Password = '" + this.txtUserPass.Text + "';";
+                var ds = Da.ExecuteQuery(sql);
+                if (ds.Tables[0].Rows.Count == 1)
                 {
-                    new DemoAdminPage(this).Show();
-                    this.Visible = false;
+                    MessageBox.Show("Wellcome");
+                    if (ds.Tables[0].Rows[0][5].ToString() == "admin")
+                    {
+                        new DemoAdminPage(this).Show();
+                        this.Visible = false;
+                    }
+                    else
+                    {
+                        new ManagerWindow(this).Show();
+                        this.Visible=false;
+                    }
+
                 }
                 else
                 {
-                    new ManagerWindow(this).Show();
-                    this.Visible=false;
+                    MessageBox.Show("Username or Password is incorrect");
                 }
-                
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Username or Password is incorrect");
+                MessageBox.Show("Error Occured." + ex.Message.ToString());
             }
             
 
+        }
+
+        private void lblRegister_Click(object sender, EventArgs e)
+        {
+            new Register(this).Show();
+            this.Visible = false;
         }
     }
 }

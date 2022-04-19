@@ -49,7 +49,7 @@ namespace SmartHostel
             this.txtResidentMotherNameUpdate.Text = ds.Tables[0].Rows[0]["MotherName"].ToString();
             this.txtResidentEmailUpdate.Text = ds.Tables[0].Rows[0]["EmailId"].ToString();
             this.txtResidentPhoneUpdate.Text = ds.Tables[0].Rows[0]["PhoneNumber"].ToString();
-            this.txtResidentOccupationUpdate.Text = ds.Tables[0].Rows[0]["MotherName"].ToString();
+            this.txtResidentOccupationUpdate.Text = ds.Tables[0].Rows[0]["Occuption"].ToString();
             this.btnResidentUpdate.Visible=true;
 
         }
@@ -62,16 +62,23 @@ namespace SmartHostel
 
         private void btnResidentIdSearch_Click(object sender, EventArgs e)
         {
-            string sql = "select * from ResidentInfo where Id = '"+this.txtSearchResidentId.Text+"';";
-            var ds = Da.ExecuteQuery(sql);
-            if(ds.Tables[0].Rows.Count == 1)
+            try
             {
-                visibleAll();
-                
+                string sql = "select * from ResidentInfo where Id = '"+this.txtSearchResidentId.Text+"';";
+                var ds = Da.ExecuteQuery(sql);
+                if (ds.Tables[0].Rows.Count == 1)
+                {
+                    visibleAll();
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Id");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid Id");
+                MessageBox.Show("Error Occured." + ex.Message.ToString());
             }
             
 

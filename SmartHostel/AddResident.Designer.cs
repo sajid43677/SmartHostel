@@ -267,6 +267,7 @@
             this.ClientSize = new System.Drawing.Size(862, 533);
             this.Controls.Add(this.pnlResidentAdd);
             this.Name = "AddResident";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Resident";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddResident_FormClosed);
             this.Load += new System.EventHandler(this.AddResident_Load);

@@ -39,8 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.picSmartHomeLogo = new System.Windows.Forms.PictureBox();
             this.lblSmartHostel = new System.Windows.Forms.Label();
+            this.picSmartHomeLogo = new System.Windows.Forms.PictureBox();
             this.picRound = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,6 +84,7 @@
             this.lblRegister.Size = new System.Drawing.Size(228, 17);
             this.lblRegister.TabIndex = 11;
             this.lblRegister.Text = "Don\'t Have an Account? Register";
+            this.lblRegister.Click += new System.EventHandler(this.lblRegister_Click);
             // 
             // lblForgetPass
             // 
@@ -157,17 +158,6 @@
             this.panel2.Size = new System.Drawing.Size(429, 441);
             this.panel2.TabIndex = 1;
             // 
-            // picSmartHomeLogo
-            // 
-            this.picSmartHomeLogo.Image = ((System.Drawing.Image)(resources.GetObject("picSmartHomeLogo.Image")));
-            this.picSmartHomeLogo.Location = new System.Drawing.Point(111, 114);
-            this.picSmartHomeLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picSmartHomeLogo.Name = "picSmartHomeLogo";
-            this.picSmartHomeLogo.Size = new System.Drawing.Size(190, 166);
-            this.picSmartHomeLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSmartHomeLogo.TabIndex = 8;
-            this.picSmartHomeLogo.TabStop = false;
-            // 
             // lblSmartHostel
             // 
             this.lblSmartHostel.AutoSize = true;
@@ -178,6 +168,17 @@
             this.lblSmartHostel.Size = new System.Drawing.Size(170, 41);
             this.lblSmartHostel.TabIndex = 7;
             this.lblSmartHostel.Text = "Smart Hostel";
+            // 
+            // picSmartHomeLogo
+            // 
+            this.picSmartHomeLogo.Image = ((System.Drawing.Image)(resources.GetObject("picSmartHomeLogo.Image")));
+            this.picSmartHomeLogo.Location = new System.Drawing.Point(111, 114);
+            this.picSmartHomeLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picSmartHomeLogo.Name = "picSmartHomeLogo";
+            this.picSmartHomeLogo.Size = new System.Drawing.Size(190, 166);
+            this.picSmartHomeLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSmartHomeLogo.TabIndex = 8;
+            this.picSmartHomeLogo.TabStop = false;
             // 
             // picRound
             // 

@@ -159,6 +159,7 @@
             this.ClientSize = new System.Drawing.Size(799, 450);
             this.Controls.Add(this.pnlDeleteEmployee);
             this.Name = "DeleteEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteEmployee";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DeleteEmployee_FormClosed);
             this.pnlDeleteEmployee.ResumeLayout(false);

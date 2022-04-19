@@ -87,7 +87,7 @@
             this.btnDeleteResidentSearch.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteResidentSearch.Location = new System.Drawing.Point(421, 70);
             this.btnDeleteResidentSearch.Name = "btnDeleteResidentSearch";
-            this.btnDeleteResidentSearch.Size = new System.Drawing.Size(75, 32);
+            this.btnDeleteResidentSearch.Size = new System.Drawing.Size(95, 32);
             this.btnDeleteResidentSearch.TabIndex = 35;
             this.btnDeleteResidentSearch.Text = "Search";
             this.btnDeleteResidentSearch.UseVisualStyleBackColor = false;
@@ -314,6 +314,7 @@
             this.ClientSize = new System.Drawing.Size(862, 553);
             this.Controls.Add(this.pnlDeleteResident);
             this.Name = "DeleteResident";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteResident";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DeleteResident_FormClosed);
             this.pnlDeleteResident.ResumeLayout(false);
